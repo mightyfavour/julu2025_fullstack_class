@@ -1,0 +1,26 @@
+/*this is my stylesheet*/
+
+.header{
+    display: flex;
+    align-items:center;
+    padding: 10px 30px;
+    background-color: rgb(60, 255, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo h1 {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.logo h3{
+    font-size: 24px;
+    color:aliceblue;
+    margin:  0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

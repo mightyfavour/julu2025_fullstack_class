@@ -1,271 +1,38 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, 
-    initial-scale=1.0">
-    <link rel="stylesheet" href="./stylef/style.css">
-    <title>CSS-Class2</title>
-    <style>
-        /*this is my stylesheet*/
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: linear-gradient(90deg, #4e54c8, #8f94fb);
-    color: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    
-}
-.logo{
-    /* display: flex;
-    align-items: center; */
-    gap: 10px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.logo h1 {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-    border-radius: 10px;
-}
-.logo h3{
-    font-size: 24px;
-    color:aliceblue;
-    margin:  0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-    .section{
-            display: flex;
-            height: 100vh;
-        }
-    .nav {
-      width: 35%;
-      background: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .nav a {
-      display: block;
-      padding: 5px;
-      margin-bottom: 10px;
-      background: white;
-      border-radius: 8px;
-      text-align: center;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      border: 1px solid #ccc;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .nav a:hover {
-      background: #4e54c8;
-      color: white;
-      transform: scale(1.05);
-    }
-
-        .article{
-            /*width: 65%;
-            background-color: blue;
-            padding: 20px;*/
-             background-color: blue;
-            flex: 1;
-        }
-        .nav-list{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: block;
-            
-
-        }
-        p{color: aquamarine;}
-        p{color: red;}
-       
-
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="logo">
-            <h1>Fendi</h1>
-            <h3>Roma</h3>
-        </div>
-    </div>
-    <div class="section">
-        <div class="nav">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Service">Services</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-            
-        </div>
-        <div class="article">
-
-        </div>
-    </div>
-    <div class="footer">
-        <p>the boy</p>
-        
-
-    </div>
-</body> -->
-<!-- </html>
-Special keywords added to selectors that define a state of an element.
-
-    :link → Style unvisited links
-
-    :visited → Style visited links
-
-    :hover → Style when mouse is over an element
-
-    :first-child → Target the first element inside a parent
-
-    :last-child → Target the last element inside a parent
-
-    :nth-child(even) / :nth-child(odd) → Target even/odd children inside a parent 
-    ....................
-    a:link { color: blue; }
-    a:visited { color: purple; }
-    a:hover { color: red; }
-    li:first-child { font-weight: bold; }   
-    li:nth-child(even) { background: #f0f0f0; }
-
-    You can define sizes using absolute or relative units.
-
-    Absolute → fixed size regardless of screen
-
-        px (pixels) → width: 200px;
-
-    Relative → scales based on something else
-
-        % → relative to parent element → width: 50%;
-
-        em → relative to the font-size of the element → font-size: 2em;
-
-        rem → relative to the root (html) font-size → font-size: 1.5rem;
-
-
-    
-    -->
-        <!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
-  /* Specificity example */
-  p { color: blue; }
-  .highlight { color: green; }
-  #special { color: purple; }
+.box1 {
+  width: 150px; height: 150px;
+  background: orange;
+  position: absolute;
+  top: 50px; left: 50px;
+  z-index: 1;
+}
 
-  /* Pseudo-classes */
-  a:link { color: blue; }
-  a:visited { color: gray; }
-  a:hover { color: red; }
+.box2 {
+  width: 150px; height: 150px;
+  background: green;
+  position: absolute;
+  top: 100px; left: 100px;
+  z-index: 2;
+}
 
-  /* nth-child example */
-  li:nth-child(even) { background-color: #eee; }
-
-  /* Units */
-  .box {
-    width: 50%;         /* relative */
-    height: 200px;      /* absolute */
-    background: pink;
-  }
+img {
+  float: left;
+  width: 100px; height: 100px;
+  margin: 10px;
+}
+p {
+  clear: both;
+}
 </style>
 </head>
 <body>
-  <p id="special" class="highlight">Hello World!</p>
-  <a href="#">Hover over me</a>
-  <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-  </ul>
-  <div class="box"></div>
-</body>
-</html> -->
+  <div class="box1"></div>
+  <div class="box2"></div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-
-<style>
-@font-face { 
-  font-family: "Merriweather Sans";
-  src: url('MerriweatherSans-Medium.ttf') format('truetype');
-}
-
-body {
-  background: #FFFFFF;
-  margin-bottom: 200px;
-}
-
-@keyframes BackgroundGradient {
-  0%{background-position:0% 50%;}
-  50%{background-position: 100% 50% }
-  100%{background-position: 0% 50%}
-
-}
-
-.VCE{
-  color: #f2f2f2;
-  background: linear-gradient(45deg, #FCE38A, #f5ad4d, #fd81b5, #f74689, #ad5af3, #8a13ef );
-  background-size: 450% 100%;
-  animation: BackgroundGradient 30s ease infinite;  
-  padding: 20px;
-  margin: 30px;
-  border-radius: 0.5rem;
-}
-
-.VCE_Title{
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  margin-bottom: 0;
-}
-
-.JTime{
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 20px;
-}
-
-button {
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 16px;
-  padding: 15px 22px;
-  border:3px #f2f2f2 solid;
-  border-radius:20px;
-  word-break: break-word;
-  white-space: normal;  
-}
-
-</style>
-</head>
-<body>
-<div class="VCE">
-<h2 class="VCE_Title">Visual Code Editor for HTML, CSS and JavaScript</h2>
-<hr style="  border: 3px solid #f2f2f2;">
-<p class="JTime">Whatever code you write above, Live Preview will be visible here</p>
-<br>
-<button type="button" onclick="document.getElementById('Example').innerHTML = Date()">a Javascript Date and Time</button>
-<p class="JTime" id="Example"></p>
-<p class="JTime">Hit the "Clear" button and start typing Code.</p>
-</div>
+  <img src="https://via.placeholder.com/100" alt="Sample">
+  <p>This text appears below the floated image because of clear.</p>
 </body>
 </html>

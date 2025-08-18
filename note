@@ -1,0 +1,32 @@
+content, padding, border, margin
+CSS Box Model
+
+Every element in HTML is a rectangular box made up of:
+
+Content → The actual text/image inside.
+
+Padding → Space between content and border.
+
+Border → A line around padding & content.
+
+Margin → Space outside the border, separating elements.
+
+CSS Position
+
+Static → Default; elements appear in normal flow.
+
+Relative → Positioned relative to its normal position.
+
+Absolute → Positioned relative to the nearest positioned 
+(non-static) ancestor.
+
+Fixed → Stays in the same place, even when scrolling.
+
+Sticky → Behaves like relative, but "sticks" to the viewport when 
+scrolling past.
+
+Float and Clear
+
+float → Pushes an element to the left or right.
+
+clear → Prevents elements from wrapping around floated elements.
